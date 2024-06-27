@@ -1,10 +1,8 @@
 
 
-function fibonacciGenerator(n){
-
-    if (n === 1 || n === 0) {
-        return [0];
-    }
+function fibonacciGenerator(n) {
+    if (n === 0) return [];
+    if (n === 1) return [0];
 
     const sequence = [0, 1];
     for (let i = 2; i < n; i++) {
@@ -13,7 +11,5 @@ function fibonacciGenerator(n){
 
     return sequence;
 }
-    
-    
 
 
