@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="titulo" id="alarma-contador">Temporizador</h1>
+
+    <div class="contenedor-uno">
+      <h1 class="tiempo" id="medidor-tiempo">00:00:00</h1>
+
+      <div class="contenedor-inputs">
+        <label for="horas">Horas:</label>
+        <input
+          class="input-hora"
+          type="number"
+          id="horas"
+          min="0"
+          max="23"
+          value="0"
+        />
+        <label for="minutos">Minutos:</label>
+        <input
+          class="input-minutos"
+          type="number"
+          id="minutos"
+          min="0"
+          max="59"
+          value="1"
+        />
+        <label for="segundos">Segundos:</label>
+        <input
+          class="input-segundos"
+          type="number"
+          id="segundos"
+          min="0"
+          max="59"
+          value="1"
+        />
+      </div>
+
+      <button class="btn-inicio" id="btn-reloj" onclick="iniciar_reloj()">
+        Iniciar
+      </button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
