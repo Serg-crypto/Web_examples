@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f9dc5c;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+}
+
+/*
+
+     
+          Imagenes / stickers de fondo 
+
+
+
+*/
+
+.img-diamond {
+  top: 50px;
+  right: 60px;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  z-index: -1;
+  transform: rotate(-40deg);
+}
+
+.img-money {
+  top: 400px;
+  left: 80px;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  z-index: -1;
+  transform: rotate(40deg);
+}
+
+.img-seven {
+  top: 340px;
+  right: 150px;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  z-index: -1;
+  transform: rotate(20deg);
+}
+
+.img-dice {
+  top: 20px;
+  left: 180px;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  z-index: -1;
+  transform: rotate(80deg);
+}
+
+.img-ticket {
+  top: 180px;
+  left: 180px;
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  z-index: -1;
+  transform: rotate(10deg);
+}
+
+/*
+
+
+
+*/
+
+.title {
+  grid-column: span 3;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.main-container {
+  margin: 40px 25%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row: repeat(5, 1fr);
+  gap: 5px;
+  align-items: center;
+  justify-items: center;
+}
+
+.sub-title {
+  color: #922d14;
+  font-size: 32px;
+  font-weight: 800;
+  grid-column: span 3;
+  margin: 20px;
+}
+
+.img-casino {
+  padding: 8px;
+  border: 4px solid #922d14;
+  border-radius: 10px;
+  margin: 0 5px;
+  background-color: #f6feaa;
+}
+
+.img-slot {
+  width: 140px;
+  height: 140px;
+}
+
+.btn-start {
+  margin-top: 40px;
+  width: 18%;
+  padding: 10px;
+  border-radius: 10px;
+  background: #6bda17;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 800;
+  grid-column: span 3;
+}
+
+.btn-start:hover {
+  cursor: pointer;
+  background-color: #beef9e;
+}
+
+.result {
+  grid-column: span 3;
+  margin-top: 40px;
+  font-size: 46px;
+  font-weight: 800px;
+}
+
+.btn-restart {
+  margin-top: 20px;
+  width: 18%;
+  padding: 10px;
+  border-radius: 10px;
+  background: #55dde0;
+  color: #000;
+  font-size: 18px;
+  font-weight: 700;
+  grid-column: span 3;
+  display: none;
+}
+
+.btn-restart:hover {
+  cursor: pointer;
+  color: #fff;
+}
